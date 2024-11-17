@@ -1,0 +1,47 @@
+/*
+CSS
+Move the center of the transform properties with transform-origin:
+visual guides:
+--"transform-origin 50% 50%"  |that would be X->50% and Y down-v 50%|
+--"transform-origin bottom left" |key words can also be used instead|
+*/
+
+
+.ft-image {
+    width: 200px;
+    transition: transform 2s;
+}
+
+.ft-image-one:hover {
+    transform: rotate(45deg);
+}
+
+.ft-image-two:hover {
+    transform: rotate(45deg);
+    transform-origin: top left;
+/*
+    "Other option to archive the same"
+    transform-origin: 0% 0%;
+
+*/
+}
+
+.ft-image-three:hover {
+    transform: rotate(45deg);
+    transform-origin: top right;
+/*
+    "Other option to archive the same"
+    transform-origin: 0% 100%;
+
+*/
+}
+
+.ft-image-four:hover {
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+/*
+    "Other option to archive the same"
+    transform-origin: 0% 100%;
+
+*/
+}

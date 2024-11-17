@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content_css %}
+    <link rel="stylesheet" href="{% static 'myapp/css/project_10.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center" style="height: 93vh;">
+    <div class="container d-flex flex-column align-items-center">
+        <img src="{% static 'myapp/images/sun_walk.jpg' %}" class="ft-image ft-image-one" alt="ft image">
+    </div>
+</div>
+{% endblock %}

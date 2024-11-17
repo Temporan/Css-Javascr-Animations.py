@@ -1,0 +1,42 @@
+/*
+CSS
+Skew html using transform: skew
+visual guides:
+--skew(X, Y)
+--skew(degree, degree)
+*/
+
+
+.ft-image {
+    width: 200px;
+    transition: transform 2s;
+}
+
+.ft-image-one:hover {
+    transform: skewX(30deg);
+/*
+    "Other option to archive the same"
+    transform: skew(30deg, 0deg);
+
+*/
+}
+
+.ft-image-two:hover {
+    transform: skewX(-30deg);
+/*
+    "Other option to archive the same"
+    transform: skew(-30deg, 0deg);
+*/
+}
+
+.ft-image-three:hover {
+    transform: skewY(30deg);
+/*
+    "Other option to archive the same"
+    transform: skew(0deg, -30deg);
+*/
+}
+
+.ft-image-four:hover {
+    transform: skew(-30deg, -30deg);
+}

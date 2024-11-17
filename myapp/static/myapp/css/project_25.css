@@ -1,0 +1,20 @@
+/*
+CSS
+3D environment
+Main difference is that instead of just having X and Y axis, there is the addition of the Z axis
+"Z axis" is nothing but the distance from my face vs screen which I have to set up by pixels at the parent container/body
+and then use the "Z axis" to get close or far from that given initial distance. Example using translateZ()
+*/
+
+.container {
+    perspective: 1000px;
+}
+
+.ft-image {
+    width: 200px;
+    transition: transform 2s;
+}
+
+.ft-image-one:hover {
+    transform: translateZ(450px); /* translateZ(-450px) works to make the image looks farther  */
+}

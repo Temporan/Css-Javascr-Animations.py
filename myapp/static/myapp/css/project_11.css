@@ -1,0 +1,26 @@
+/*
+CSS
+3D environment
+Rotation
+*/
+
+.container {
+    perspective: 1000px;
+}
+
+.ft-image {
+    width: 200px;
+    transition: transform 2s;
+}
+
+.ft-image-one:hover {
+    transform: rotateX(90deg);
+}
+
+.ft-image-two:hover {
+    transform: rotateZ(90deg);
+}
+
+.ft-image-three:hover {
+    transform: rotateY(90deg);
+}

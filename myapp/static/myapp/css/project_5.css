@@ -1,0 +1,17 @@
+/*
+CSS
+Change the position of html elements
+*/
+
+
+.ft-image {
+    width: 300px;
+    transition: transform 3s;
+}
+
+.ft-image:hover {
+    transform: translate(-500px, 200px);
+}
+
+
+

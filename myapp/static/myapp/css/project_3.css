@@ -1,0 +1,25 @@
+/*
+CSS transitions
+Enable smooth, gradual changes in CSS properties, like color, size, position, or opacity,
+over a specified duration. Instead of changes happening instantly.
+*/
+
+
+.c-button-1 {
+/*--styling buttons ----*/
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+/*--project attributes --*/
+    transition-property: background-color;   /*project element*/
+    transition-duration: 1s;  /*project element*/
+    transition-delay: 1s;  /*project element*/
+}
+
+
+.c-button-1:hover {
+    background-color: green;
+}

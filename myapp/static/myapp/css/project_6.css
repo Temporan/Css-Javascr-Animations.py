@@ -1,0 +1,39 @@
+/*
+CSS
+Resize html using transform: scale
+visual guides:
+--scale(X, Y)
+--scale(1.5, 2) |1.5 = 150% and 2 = 200%|
+*/
+
+
+.ft-image {
+    width: 200px;
+    transition: transform 2s;
+}
+
+.ft-image-ln:hover {
+    transform: scale(2, 1);
+/*
+    "Other option to archive the same"
+    transform: scaleX(2, 1);
+
+*/
+}
+
+.ft-image-bg:hover {
+    transform: scale(2);
+/*
+    "Other option to archive the same"
+    transform: scale(2, 2);
+*/
+}
+
+.ft-image-lg:hover {
+    transform: scale(1, 2);
+/*
+    "Other option to archive the same"
+    transform: scaleY(2);
+*/
+}
+

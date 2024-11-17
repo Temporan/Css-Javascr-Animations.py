@@ -1,0 +1,39 @@
+body {
+    background-color: #222;
+}
+
+.ank {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid white;
+    padding: 40px 80px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.ank:hover {
+    background-color: #f44336;
+}
+
+
+/* animated background color */
+.ank:before {
+    content: '';
+    background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transition: transform 0.3s;
+    transform: translate(-100%, 130%) rotate(45deg);
+
+}
+
+.ank:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
+

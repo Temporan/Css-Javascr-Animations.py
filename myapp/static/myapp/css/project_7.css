@@ -1,0 +1,22 @@
+/*
+CSS
+transform: rotate; |examples|
+*/
+
+
+.ft-image {
+    width: 300px;
+    transition: transform 3s;
+}
+
+.ft-image:hover {
+    transform: rotate(360deg);
+    transform: rotate(-360deg);
+    transform: rotate(1turn);
+    transform: rotate(0.5turn);
+
+/* rotateX() and rotateY()  cna also be used, check practice 11 */
+}
+
+
+

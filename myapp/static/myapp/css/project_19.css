@@ -1,0 +1,40 @@
+.ank {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid #262626;
+    background-color: #262626;
+    padding: 40px 80px;
+    transition: all 0.3s;
+    position: relative;
+    color: transparent;
+    overflow: hidden; /* delete overflow to better understand the example */
+}
+
+/* animated background color */
+.ank:before, .ank:after{
+      content: 'Hover Me';
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      color: #262626;
+      background-color: #fffa65;
+      transition: all 1s;
+}
+
+.ank:hover:before {
+    transform: translate(100%, -100%);
+}
+
+.ank:after {
+    transform: translate(-100%, 100%);
+}
+
+.ank:hover:after {
+    transform: translate(0, 0);
+}

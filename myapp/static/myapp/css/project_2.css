@@ -1,0 +1,65 @@
+/*
+CSS transitions
+Enable smooth, gradual changes in CSS properties, like color, size, position, or opacity,
+over a specified duration. Instead of changes happening instantly.
+*/
+
+
+/*transition-timing-function*/
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+}
+
+
+.c-button-1 {
+/*--styling buttons ----*/
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 2rem;
+/*--project attributes --*/
+/*  transform, tells the browser that you want to animate any changes to the transform property, which
+    can include transformations like translate(), rotate(), scale(), etc.*/
+    transition-property: transform;
+    transition-duration: 3s;  /*Time in which the transition displays*/
+}
+
+
+.move:hover {
+/*  translate(x, y), it allows to animate the movement
+    of an element (such as shifting its position on the screen) smoothly over a set duration.*/
+    transform: translate(80rem, 0);
+}
+
+.ease{
+    transition-timing-function: ease;
+}
+
+.linear{
+    transition-timing-function: linear;
+}
+
+.ease-in{
+    transition-timing-function: ease-in;
+}
+
+.ease-out{
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}

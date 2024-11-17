@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content_css %}
+    <link rel="stylesheet" href="{% static 'myapp/css/project_9.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center" style="height: 93vh;">
+    <div class="container d-flex flex-column align-items-center">
+        <img src="{% static 'myapp/images/sun_walk.jpg' %}" class="ft-image ft-image-one mb-1" alt="ft image">
+        <img src="{% static 'myapp/images/sun_walk.jpg' %}" class="ft-image ft-image-two mb-1" alt="ft image">
+        <img src="{% static 'myapp/images/sun_walk.jpg' %}" class="ft-image ft-image-three mb-1" alt="ft image">
+        <img src="{% static 'myapp/images/sun_walk.jpg' %}" class="ft-image ft-image-four" alt="ft image">
+    </div>
+</div>
+{% endblock %}

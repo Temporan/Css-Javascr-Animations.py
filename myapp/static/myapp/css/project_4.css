@@ -1,0 +1,34 @@
+/*
+CSS transitions
+Enable smooth, gradual changes in CSS properties, like color, size, position, or opacity,
+over a specified duration. Instead of changes happening instantly.
+*/
+/* Multiple transitions can occur at the same time  */
+
+.c-button-1 {
+/*--styling buttons ----*/
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+/*--project attributes --*/
+/*--transition-property & transition-duration must be used together such as:
+   "
+    transition-property: opacity, transform, color;
+    transition-duration: 1s, 2s, 1.5s;
+   "
+While transition transition anodynes both at the same time
+--*/
+    transition: background-color 3s ease-in-out 1s,   /*-- "transition: all 3s ease-in" works fine but all transitions have same timing--*/
+                color 2s ease 4s,
+                border-radius 4s ease-out 6s
+}
+
+
+.c-button-1:hover {
+    background-color: green;
+    color: black;
+    border-radius: 50%;
+}
