@@ -1,0 +1,108 @@
+body {
+    background-color: #0c2461;
+}
+
+.btnn {
+    position: relative;
+    height: 60px;
+    width: 200px;
+    margin: 20;
+}
+
+/* Base ank */
+.ank {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.051);
+    box-shadow: 0px 3px 30px rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(250, 52, 52, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.7s;
+    backdrop-filter: blur(15px);
+}
+
+.ank:hover {
+    letter-spacing: 5px;
+}
+
+/* ank-before section */
+.ank:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.149), transparent);
+    transform: skew(45deg);
+    transition: all 0.7s;
+}
+
+.ank:hover:before {
+    transform: translateX(220%) skew(45deg);
+}
+
+/********** span base section **********/
+
+
+.btnn:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 20px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #ff0461;
+    box-shadow: 0 0 5px #ff0461, 0 0 15px #ff0461, 0 0 30px #ff0461, 0 0 60px #ff0461;
+    border-radius: 10px;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.btnn:hover:before {
+    width: 85%;
+    height: 50%;
+    border-radius: 30px;
+    transform: translateX(-50%);
+}
+
+
+
+
+.btnn:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 20px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #ff0461;
+    box-shadow: 0 0 5px #ff0461, 0 0 15px #ff0461, 0 0 30px #ff0461, 0 0 60px #ff0461;
+    border-radius: 10px;
+    z-index: -1;
+    transition: all 1s
+}
+
+.btnn:hover:after {
+    width: 85%;
+    height: 50%;
+    border-radius: 30px;
+    transform: translate(-50%, -100%);
+}

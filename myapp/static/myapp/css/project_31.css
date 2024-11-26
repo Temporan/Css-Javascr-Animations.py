@@ -1,0 +1,55 @@
+body {
+    background-color: #10ac84;
+}
+
+/* Base ank */
+.ank {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 30px;
+    color: white;
+    padding: 15px 40px;
+    position: relative;
+    transition: all 0.8s;
+}
+
+/* Before/artificial-border for z-index to work as intended in this button */
+.ank:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    width: 50%;
+    height: 100%;
+    background-color: #ee5253;
+    transform: skewX(30deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* cubic-bezier spacing/bouncing effect read more witch chat-gpt  */
+    z-index: -1;
+}
+
+.ank:hover:before {
+    top: 0;
+    left: 50%;
+    transform: skewX(0);
+}
+
+/* after */
+.ank:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 51%;
+    width: 50%;
+    height: 100%;
+    background-color: #0a3d62;
+    transform: skewX(30deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* cubic-bezier spacing/bouncing effect read more witch chat-gpt  */
+    z-index: -1;
+}
+
+.ank:hover:after {
+    top: 0;
+    left: 0%;
+    transform: skewX(0);
+}

@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends "myapp/projects_base.html" %}
 {% load static %}
 
 {% block content_css %}
     <link rel="stylesheet" href="{% static 'myapp/css/project_18.css' %}">
 {% endblock %}
 
-{% block content %}
+{% block projects_content %}
     <div class="d-flex align-items-center" style="height: 93vh;">
         <div class="container d-flex flex-column align-items-center">
             <a href="#" class="ank ank-three">Hover Me</a>

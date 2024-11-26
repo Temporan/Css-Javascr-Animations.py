@@ -1,0 +1,48 @@
+body {
+    background-color: #10ac84;
+}
+
+/* Base ank */
+.ank {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: gray;
+    background-color: white;
+    padding: 25px 50px;
+    border-radius: 100px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.ank:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ank:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* before section */
+.ank:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background-color: white;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.ank:hover:before {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}

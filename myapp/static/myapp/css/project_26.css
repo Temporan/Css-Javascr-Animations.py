@@ -1,20 +1,58 @@
-/*
-CSS
-3D environment
-Main difference is that instead of just having X and Y axis, there is the addition of the Z axis
-"Z axis" is nothing but the distance from my face vs screen which I have to set up by pixels at the parent container/body
-and then use the "Z axis" to get close or far from that given initial distance. Example using translateZ()
-*/
-
-.container {
-    perspective: 1000px;
+body {
+    background-color: #262626;
 }
 
-.ft-image {
+.ank {
+    text-align: center;
+    text-justify: center;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 60px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fdc518;
+    height: 60px;
     width: 200px;
-    transition: transform 2s;
+    position: relative;
 }
 
-.ft-image-one:hover {
-    transform: translateZ(450px); /* translateZ(-450px) works to make the image looks farther  */
+
+/* ------------------------- Base ---------------------------- */
+.ank:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 90px;
+    width: 200px;
+    border-left: 2px solid red;
+    border-right: 2px solid #fdc518;
+    transition: all 1s;
 }
+
+.ank:hover:before {
+    transform: rotateY(180deg);
+}
+
+/* After section--------------------------------------------- */
+.ank:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    height: 60px;
+    width: 230px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid #fdc518;
+    transition: all 1s;
+    transition-delay: 0.2s;
+}
+
+.ank:hover:after {
+    transform: rotateX(180deg);
+
+}
+
+

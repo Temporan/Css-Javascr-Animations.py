@@ -1,0 +1,26 @@
+{% extends "myapp/projects_base.html" %}
+{% load static %}
+
+{% block content_css %}
+    <link rel="stylesheet" href="{% static 'myapp/css/project_36.css' %}">
+    <!--- Icons links --->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+{% endblock %}
+
+{% block projects_content %}
+    <div class="d-flex align-items-center" style="height: 93vh;">
+        <div class="container d-flex align-items-center justify-content-center c-container">
+            {% if previous_project %}
+                <a href="{% url 'myapp:project' project_name=previous_project.name %}" class="ank"><i class="ph ph-arrow-fat-lines-left"></i></a>
+            {% else %}
+                <a href="" class="ank"><i class="none-i ph ph-arrow-fat-lines-left"></i></a>
+            {% endif %}
+
+
+            {% if next_project %}
+                <a href="{% url 'myapp:project' project_name=next_project.name %}" class="ank-second"><i class="ph ph-arrow-fat-lines-right"></i></a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+

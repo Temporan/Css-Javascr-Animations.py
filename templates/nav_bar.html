@@ -7,9 +7,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'myapp:project_list' %}"> Something? </a>
+          <a class="nav-link active" aria-current="page" href=""> Something? </a>
         </li>
       </ul>
+
+      <p class="navbar-text mx-auto mb-0 text-center" style="font-size: 1.1rem;"> {{ project.name }} </p>
 
       <ul class="navbar-nav custom-me-6 ms-auto mb-lg-0"> <!-- Use ms-auto for right alignment -->
         <li class="nav-item dropdown">

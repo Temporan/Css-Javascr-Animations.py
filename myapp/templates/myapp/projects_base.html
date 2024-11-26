@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block projects_css %}
+    <link rel="stylesheet" href="{% static 'myapp/css/base_project.css' %}">
+    <!--- Icons links --->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+{% endblock %}
+
+
+{% block content %}
+  <div class=" c-container " style="position:fixed; bottom:30px; right:30px;">
+      {% if previous_project %}
+        <a href="{% url 'myapp:project' project_name=previous_project.name %}" class="anki active-anki"><i class="ph ph-arrow-fat-lines-left"></i></a>
+      {% else %}
+        <a href="" class="anki"><i class="ph ph-arrow-fat-lines-left inactive-icon"></i></a>
+      {% endif %}
+
+      {% if next_project %}
+        <a href="{% url 'myapp:project' project_name=next_project.name %}" class="anki active-anki"><i class="ph ph-arrow-fat-lines-right"></i></a>
+      {% else %}
+        <a href="" class="anki"><i class="ph ph-arrow-fat-lines-right inactive-icon"></i></a>
+      {% endif %}
+  </div>
+  {% block projects_content %}
+
+  {% endblock %}
+{% endblock %}

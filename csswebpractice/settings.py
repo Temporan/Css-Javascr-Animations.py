@@ -123,6 +123,7 @@ STATIC_URL = 'static/'
 # Include the path to your static directory
 STATICFILES_DIRS = [
     BASE_DIR / "static",  # This assumes 'static' is at the same level as your 'manage.py'
+    BASE_DIR / "myapp/static",
 ]
 
 # Default primary key field type

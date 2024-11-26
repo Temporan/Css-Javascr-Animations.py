@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "myapp/projects_base.html" %}
+{% load static %}
 
-</body>
-</html>
+{% block content_css%}
+    <link rel="stylesheet" href="{% static 'myapp/css/project_25.css' %}">
+{% endblock %}
+
+{% block projects_content %}
+    <div class="d-flex align-items-center" style="height: 93vh;">
+        <div class="container d-flex flex-column align-items-center">
+            <a href="" class="ank mb-3"><span></span>Hover Me</a>
+            <a href="" class="ank second-ank mb-3"><span></span>Hover Me</a>
+            <a href="" class="ank third-ank "><span></span>Hover Me</a>
+        </div>
+    </div>
+{% endblock %}

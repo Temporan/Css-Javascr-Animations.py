@@ -1,0 +1,49 @@
+/* Terrible terrible, just do something better later on*/
+
+/* defining the main container */
+
+.c-container {
+    width: 250px;
+    height: 100px;
+    background: white;
+    border: 2px solid #ffed90;
+    box-shadow: 0px 20px 50px rgba(150, 150, 150, 0.4);
+    border-radius: 20px;
+    position: relative;
+}
+
+
+/* defining the ank/icons */
+.c-container .anki {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 70px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s;
+}
+
+.inactive-icon {
+    color: gray;
+}
+
+
+/* individual ank/icon adjustments */
+.c-container .anki:nth-child(1) {
+    left: 25px;
+}
+
+.c-container .anki:nth-child(2) {
+    right: 25px;
+}
+
+
+.c-container .active-anki:hover:nth-child(1)  {
+    transform: translate(-10%, -52%) scale(1.04);
+}
+
+.c-container .active-anki:hover:nth-child(2)  {
+    transform: translate(10%, -52%) scale(1.04);
+}
+

@@ -1,0 +1,91 @@
+/* Body */
+body {
+    background-color: #272727;
+}
+
+/* Base ank */
+.ank {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 40px;
+    color: white;
+    padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Before */
+.ank:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-top: 3px solid white;
+    transform: translateX(-101%);
+    transition: all 1s;
+}
+
+.ank:hover:before {
+    transform: translateX(0);
+}
+
+/* after */
+.ank:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    border-top: 3px solid white;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.ank:hover:after {
+    transform: translateX(0);
+}
+
+
+
+/* Span Before */
+.ank span:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border-top: 3px solid white;
+    transform: translateX(101%);
+    transition: all 1s;
+}
+
+.ank:hover span:before {
+    transform: translateX(0);
+}
+
+/* Span after */
+.ank span:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    border-top: 3px solid white;
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.ank:hover span:after {
+    transform: translateX(0);
+}
+

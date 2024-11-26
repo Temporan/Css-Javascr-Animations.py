@@ -1,0 +1,14 @@
+{% extends "myapp/projects_base.html" %}
+{% load static %}
+
+{% block content_css %}
+    <link rel="stylesheet" href="{% static 'myapp/css/project_32.css' %}">
+{% endblock %}
+
+{% block projects_content %}
+    <div class="d-flex align-items-center" style="height: 93vh;">
+        <div class="container d-flex flex-column align-items-center">
+            <button class="ank">Button</button>
+        </div>
+    </div>
+{% endblock %}

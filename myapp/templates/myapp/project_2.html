@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends "myapp/projects_base.html" %}
 {% load static %}
 
 {% block content_css %}
     <link rel="stylesheet" href="{% static 'myapp/css/project_2.css' %}">
 {% endblock %}
 
-{% block content %}
+{% block projects_content %}
     <div class="custom-container">
         <button class="c-button-1 move ease">Ease (Default)</button>
         <button class="c-button-1 move linear">Linear</button>

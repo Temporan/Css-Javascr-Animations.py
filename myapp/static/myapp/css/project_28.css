@@ -1,0 +1,55 @@
+/* anker section */
+.ank {
+    text-decoration: none;
+
+    font-size: 35px;
+    color: #272727;
+    border: 3px solid #272727;
+    padding: 10px 55px;
+    position: relative;
+    transition: all 1s;
+}
+
+.ank:hover {
+    color: white;
+}
+
+
+
+.ank:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    opacity: 0;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.ank:hover:before {
+    opacity: 1;
+    transform: rotate(15deg);
+}
+
+
+
+/* Span section */
+.ank span {
+    color: transparent;
+    position: relative;
+}
+
+.ank span:before {
+    content: 'B';
+    position: absolute;
+    color: #272727;
+    transition: all 0.4s;
+}
+
+.ank:hover span:before {
+    color: white;
+    transform: scale(2.8) rotate(360deg) translate(-6px, -5px);
+}
